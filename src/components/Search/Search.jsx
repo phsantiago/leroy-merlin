@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 import PropTypes from 'prop-types';
@@ -10,10 +9,6 @@ class Search extends Component {
     className: PropTypes.string,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className={styles.base}>
@@ -23,7 +18,7 @@ class Search extends Component {
             size='2x'
           />
         </label>
-        <input id="search" type="text" className={styles.input} />
+        <input { ...this.props } id="search" type="text" className={styles.input} />
       </div>
     );
   }
