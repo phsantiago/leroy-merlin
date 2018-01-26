@@ -1,4 +1,21 @@
 .base {
   display: inline-block;
   width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.menuWrapper {
+  color: #545454;
+  display: inline-block;
+  padding: 7px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.searchWrapper {
+  width: calc(100% - 80px);
+  display: flex;
 }

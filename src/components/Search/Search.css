@@ -1,0 +1,20 @@
+.base {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+.icon {
+  position: absolute;
+  color: rgb(202, 202, 202);
+  font-size: 13px;
+  margin: 10px 8px;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 19px;
+  padding: 13px 0 13px 42px;
+}
