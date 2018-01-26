@@ -49,11 +49,17 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "lint:css": "stylelint src/**/*.css",
+    "lint:js": "eslint src/index.jsx",
+    "lint": "yarn run lint:css && yarn run lint:js"
   },
   "devDependencies": {
     "enzyme-adapter-react-15": "^1.0.5",
-    "eslint-config-airbnb-base": "^12.1.0"
+    "eslint-config-airbnb-base": "^12.1.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-webpack-plugin": "^0.10.1"
   },
   "jest": {
     "collectCoverageFrom": [
