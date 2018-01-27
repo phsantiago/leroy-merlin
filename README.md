@@ -15,3 +15,5 @@ Teste de código para Leroy Merlin
 * Continuous Integration com TravisCI
 * Mocky.io para o JSON
 * Rest integration utilizando status code e verbo de HTTP
+
+![](https://i.imgur.com/ennSPtQ.png)
