@@ -1,4 +1,4 @@
 {
-  "presets": ["react"],
+  "presets": ["react-app"],
   "plugins": ["react-hot-loader/babel", "transform-class-properties", "transform-object-rest-spread"]
 }
