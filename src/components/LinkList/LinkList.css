@@ -1,0 +1,22 @@
+.base{
+  background-color: #fff;
+  border-top: 1px solid #d0d0d0;
+  padding: 30px 10px;
+  margin-bottom: 40px;
+}
+.listWrapper {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .listWrapper {
+    width: 650px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .listWrapper {
+    width: 850px;
+  }
+}
