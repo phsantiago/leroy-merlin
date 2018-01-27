@@ -1,0 +1,75 @@
+.base {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.upvotesWrapper {
+  display: inline-block;
+  width: 45px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+.upvotes {
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 4px 0;
+}
+
+.chevronUp {
+  color: #e3472f;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 7px 0;
+}
+.linkContent {
+  width: calc(100% - 55px);
+  padding-left: 10px;
+}
+.site {
+  color: #cbcbcb;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.title {
+  font-size: 21px;
+  margin: 3px 0 7px;
+}
+
+.category {
+  background-color: #00e2ad;
+  display: inline-block;
+  font-size: 13px;
+  padding: 3px 11px;
+  color: #fff;
+  border-radius: 26px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.comments{
+  display: inline-block;
+}
+.comments, .commentsLink, .authorName a {
+  color: #e3472f;
+}
+.commentsLink {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.authorImg {
+  height: 20px;
+  border-radius: 4px;
+}
+.authorName {
+  margin-left: 6px;
+}
+.row1 {
+  margin-bottom: 10px;
+}
