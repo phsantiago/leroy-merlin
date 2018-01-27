@@ -15,7 +15,11 @@ function Header({ ...props }) {
             <img src={logo} alt="logo ux" />
           </div>
           { window.innerWidth < 700 ||
-            <SearchWithOptions onSearch={event => props.onSearch(event)} />
+            <SearchWithOptions
+              onSearch={event => props.onSearch(event)}
+              sortOrder={props.sortOrder}
+              onChangeSort={sort => props.onChangeSort(sort)}
+            />
           }
         </div>
         <div className={styles.addPost}>
@@ -42,13 +46,21 @@ function Header({ ...props }) {
           </div>
         </div>
       </div>
-      { window.innerWidth < 700 && <SearchWithOptions onSearch={event => props.onSearch(event)}/> }
+      { window.innerWidth < 700 &&
+        <SearchWithOptions
+          onSearch={event => props.onSearch(event)}
+          sortOrder={props.sortOrder}
+          onChangeSort={sort => props.onChangeSort(sort)}
+        />
+      }
     </div>
   );
 }
 
 Header.propTypes = {
   onSearch: PropTypes.func,
+  onChangeSort: PropTypes.func,
+  sortOrder: PropTypes.string,
 };
 
 export default Header;
