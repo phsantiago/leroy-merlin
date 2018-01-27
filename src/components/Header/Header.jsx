@@ -1,16 +1,22 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import Search from '../Search/Search.jsx';
+import PropTypes from 'prop-types';
+import SearchWithOptions from '../SearchWithOptions/SearchWithOptions.jsx';
 import styles from './Header.css';
 import logo from '../../img/logo.png';
 import profilePic from '../../img/profile-pic.jpeg';
 
-function Header() {
+function Header({ ...props }) {
   return (
     <div className={styles.base}>
       <div className={`${styles.row} ${styles.heading}`}>
-        <div className={styles.logo}>
-          <img src={logo} alt="logo ux" />
+        <div className={styles.logoAndSearch}>
+          <div className={styles.logo}>
+            <img src={logo} alt="logo ux" />
+          </div>
+          { window.innerWidth < 700 ||
+            <SearchWithOptions onSearch={event => props.onSearch(event)} />
+          }
         </div>
         <div className={styles.addPost}>
           <div className={styles.buttonWrapper}>
@@ -36,20 +42,13 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className={styles.row}>
-        <div className={styles.menuWrapper}>
-          <FontAwesome
-            name="bars"
-            size='2x'
-          />
-        </div>
-        <div className={styles.searchWrapper}>
-          <Search />
-        </div>
-
-      </div>
+      { window.innerWidth < 700 && <SearchWithOptions onSearch={event => props.onSearch(event)}/> }
     </div>
   );
 }
+
+Header.propTypes = {
+  onSearch: PropTypes.func,
+};
 
 export default Header;
