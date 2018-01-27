@@ -73,3 +73,24 @@
 .row1 {
   margin-bottom: 10px;
 }
+.time {
+  font-size: 14px;
+  color: #616161;
+}
+@media screen and (min-width: 700px) {
+  .row1 {
+    display: inline-block;
+  }
+  .row {
+    display: inline-flex;
+    margin-left: 18px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bottomContent {
+    display: flex;
+  }
+  .time {
+    margin-right: 10px;
+  }
+}
