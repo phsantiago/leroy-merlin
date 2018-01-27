@@ -1,0 +1,75 @@
+.base {
+  background-color: #fff;
+  padding: 0 10px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.aboutText, .logoWrapper {
+  display: inline-block;
+}
+.title {
+  margin: 0;
+  font-size: 13px;
+}
+.sub {
+  font-size: 11px;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.logoWrapper {
+  margin-right: 10px;
+}
+.fbIcon {
+  background-color: #3d599b;
+}
+.twIcon {
+  background-color: #00abee;
+}
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+.socialIcon {
+  color: #fff;
+  width: 20px;
+  height: 14px;
+  text-align: center;
+  padding-top: 4px;
+  border-radius: 3px;
+  font-size: 11px;
+  margin-right: 10px;
+}
+.socialNetwork {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.linksWrapper {
+  margin-top: 10px;
+}
+.links a {
+  font-size: 12px;
+  margin: 0 5px;
+  color: #e3472f;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 11px;
+  color: #b7b7b7;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 700px) {
+  .base {
+    width: 650px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .base {
+    width: 850px;
+  }
+}
